@@ -1,0 +1,55 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+import { Text } from './Text'
+
+<Meta title="components/Text" />
+
+# Text
+
+## Props
+
+<Props of={Text} />
+
+## Size
+
+<Preview withSource="open">
+    <Story name="Text xs">
+        <Text size="xs">Extra small</Text>
+    </Story>
+    <Story name="Text s">
+        <Text size="s">Small</Text>
+    </Story>
+    <Story name="Text m">
+        <Text size="m">Medium</Text>
+    </Story>
+    <Story name="Text l">
+        <Text size="l">Large</Text>
+    </Story>
+</Preview>
+
+## Weight
+
+<Preview withSource="open">
+    <Story name="Text 300">
+        <Text weight="300">300</Text>
+    </Story>
+    <Story name="Text 400">
+        <Text weight="400">400</Text>
+    </Story>
+    <Story name="Text 700">
+        <Text weight="700">700</Text>
+    </Story>
+    <Story name="Text 800">
+        <Text weight="800">800</Text>
+    </Story>
+</Preview>
+
+## Family
+
+<Preview withSource="open">
+    <Story name="Text primary">
+        <Text family="primary">Primary</Text>
+    </Story>
+    <Story name="Text seconday">
+        <Text family="secondary">Secondary</Text>
+    </Story>
+</Preview>

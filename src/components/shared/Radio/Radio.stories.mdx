@@ -1,0 +1,48 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+import { Radio } from './Radio'
+
+<Meta title="components/Radio" />
+
+# Radio
+
+## Props
+
+<Props of={Radio} />
+
+## Basic
+
+<Preview withSource="open">
+    <Story name="Radio">
+        <Radio label="Click me" />
+    </Story>
+</Preview>
+
+## Checked
+
+<Preview withSource="open">
+    <Story name="Radio checked">
+        <Radio label="Click me" checked={true} />
+    </Story>
+</Preview>
+
+## Disabled
+
+<Preview withSource="open">
+    <Story name="Radio disabled">
+        <Radio label="Click me" disabled={true} />
+    </Story>
+</Preview>
+
+## Multiple
+
+<Preview withSource="open">
+    <Story name="Radio multiple pizza">
+        <Radio label="Pizza" name="food" checked={true} />
+    </Story>
+    <Story name="Radio multiple steak">
+        <Radio label="Steak" name="food" />
+    </Story>
+    <Story name="Radio multiple salad">
+        <Radio label="Salad" name="food" />
+    </Story>
+</Preview>

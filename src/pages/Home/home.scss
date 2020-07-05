@@ -1,0 +1,62 @@
+@import '../../scss/index.scss';
+
+// THIS WORKS
+@media (max-width: calc(calc(((76.9230769231) / 100) * var(--sh)) * 1)) {
+    // THIS DOES NOT WORK
+    // @media (max-width: calc(500px - calc(100px - 50))) {
+    .card-container {
+        background: red;
+    }
+}
+
+.card-container {
+    display: grid;
+    grid-gap: var(--space-m);
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    width: 100%;
+    // max-width: 25rem;
+    // padding: var(--space-m);
+    text-align: center;
+    @extend .pointer-base;
+    @extend .font-base;
+    @extend .f-s-m;
+
+    &__img {
+        width: 100%;
+        max-width: 25rem;
+    }
+
+    .card-info {
+        margin-top: var(--space-m);
+
+        &__brand {
+            text-transform: uppercase;
+            @extend .f-w-700;
+        }
+
+        &__deck {
+            @extend .f-s-s;
+        }
+
+        &__price {
+            margin-top: var(--space-xs);
+            @extend .f-w-700;
+        }
+
+        &__seller {
+            max-width: 6rem;
+            height: auto;
+        }
+    }
+
+    // .card-tag {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+
+    // }
+}

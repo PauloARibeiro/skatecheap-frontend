@@ -1,0 +1,58 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+import { Heading } from './Heading'
+
+<Meta title="components/Heading" />
+
+# Heading
+
+## Props
+
+<Props of={Heading} />
+
+## Size
+
+<Preview withSource="open">
+    <Story name="Heading h5">
+        <Heading size="h5">H5</Heading>
+    </Story>
+    <Story name="Heading h4">
+        <Heading size="h4">H4</Heading>
+    </Story>
+    <Story name="Heading h3">
+        <Heading size="h3">H3</Heading>
+    </Story>
+    <Story name="Heading h2">
+        <Heading size="h2">H2</Heading>
+    </Story>
+    <Story name="Heading h1">
+        <Heading size="h1">H1</Heading>
+    </Story>
+</Preview>
+
+## Weight
+
+<Preview withSource="open">
+    <Story name="Heading 300">
+        <Heading weight="300">300</Heading>
+    </Story>
+    <Story name="Heading 400">
+        <Heading weight="400">400</Heading>
+    </Story>
+    <Story name="Heading 700">
+        <Heading weight="700">700</Heading>
+    </Story>
+    <Story name="Heading 800">
+        <Heading weight="800">800</Heading>
+    </Story>
+</Preview>
+
+## Family
+
+<Preview withSource="open">
+    <Story name="Heading primary">
+        <Heading family="primary">Primary</Heading>
+    </Story>
+    <Story name="Heading seconday">
+        <Heading family="secondary">Secondary</Heading>
+    </Story>
+</Preview>

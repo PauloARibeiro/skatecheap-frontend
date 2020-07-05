@@ -1,0 +1,12 @@
+.test {
+}
+
+.test h2 {
+    display: none;
+}
+
+@media (max-width: calc(40rem - 5em)) {
+    .test {
+        background: red;
+    }
+}

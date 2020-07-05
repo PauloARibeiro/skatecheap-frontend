@@ -1,0 +1,27 @@
+/********** BUTTON BASE STYLES **********/
+@mixin button-base($font-color, $background-color, $border-color) {
+    color: var(--#{$font-color});
+    background-color: var(--#{$background-color});
+    border-color: var(--#{$border-color});
+}
+
+/********** BUTTON HOVER STYLES **********/
+@mixin button-hover($font-color, $background-color, $border-color) {
+    &:hover:enabled {
+        color: var(--#{$font-color});
+        background-color: var(--#{$background-color});
+        border-color: var(--#{$border-color});
+    }
+}
+
+/********** FADE **********/
+@mixin fade($time: 0.1s) {
+    transition: all $time ease 0s;
+}
+
+// /********** TEXT **********/
+// @mixin text-base($size, $font, $line-height) {
+//     font-size: var(--#{$size});
+//     font-family: var(--#{$font});
+//     line-height: var(--#{$line-height});
+// }

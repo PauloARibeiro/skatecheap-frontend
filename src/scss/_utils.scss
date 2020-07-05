@@ -1,0 +1,53 @@
+@import './variables';
+
+/********** FONT SIZE **********/
+@each $name, $value in $f-sizes {
+    .f-s-#{$name} {
+        font-size: #{$value};
+    }
+}
+
+/********** FONT WEIGHT **********/
+@each $name, $value in $f-weights {
+    .f-w-#{$name} {
+        font-weight: #{$value};
+    }
+}
+
+/********** HEADINGS **********/
+@each $name, $value in $h-sizes {
+    .#{$name} {
+        font-size: #{$value};
+        line-height: var(--#{$name}-line-height);
+    }
+}
+
+/********** FONT FAMILY **********/
+.f-f-primary {
+    font-family: var(--f-primary);
+}
+
+.f-f-secondary {
+    font-family: var(--f-secondary);
+}
+
+/********** DISABLED **********/
+.disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+/********** CURSOR POINTER BASE **********/
+.pointer-base {
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+/********** FONT BASE **********/
+.font-base {
+    line-height: var(--f-line-height);
+    font-family: var(--f-primary);
+    color: var(--c-black);
+    text-decoration: none;
+    @extend .f-w-300;
+}

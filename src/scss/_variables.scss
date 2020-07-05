@@ -1,0 +1,80 @@
+/********** Variables **********/
+
+:root {
+    /********** COLORS **********/
+    --c-black: #191919;
+    --c-white: #fff;
+    --c-brand: #62e6ac;
+    --c-cta: #ff8c5f;
+    --c-link: #1755b7;
+    --c-error: #ff4d4d;
+    --c-success: #75de50;
+
+    /********** GRAYSCALES **********/
+    --c-grayscale-300: #e3e3e3;
+    --c-grayscale-400: #d2d2d2;
+    --c-grayscale-600: #a3a3a3;
+    --c-grayscale-800: #7d7d7d;
+
+    /********** FONT FAMILY **********/
+    --f-primary: 'Nunito Sans', sans-serif;
+    --f-secondary: 'Josefin Sans';
+
+    /********** FONT SIZE **********/
+    --f-size-xs: 1.5rem;
+    --f-size-s: 1.6rem;
+    --f-size-m: 2rem;
+    --f-size-l: 2.3rem;
+
+    /********** LINE HEIGHT **********/
+    --f-line-height: 1.34;
+
+    /********** HEADING SIZE **********/
+    --h1: 18.2rem;
+    --h2: 10.1rem;
+    --h3: 7.9rem;
+    --h4: 4.7rem;
+    --h5: 2rem;
+
+    /********** HEADING LINE HEIGHT **********/
+    --h1-line-height: 0.77;
+    --h2-line-height: 1.06;
+    --h3-line-height: 1.14;
+    --h4-line-height: 1.25;
+    --h5-line-height: 1.32;
+
+    /********** SPACE **********/
+    --space-xs: 0.8rem;
+    --space-s: 1.6rem;
+    --space-m: 2.4rem;
+    --space-l: 3.2rem;
+    --space-xl: 4rem;
+    --space-xxl: 4.8rem;
+
+    --sh: 1440px;
+}
+
+/********** WEIGHTS **********/
+$f-weights: (
+    300: 300,
+    400: 400,
+    700: 700,
+    800: 800,
+);
+
+/********** FONT SIZE **********/
+$f-sizes: (
+    xs: var(--f-size-xs),
+    s: var(--f-size-s),
+    m: var(--f-size-m),
+    l: var(--f-size-l),
+);
+
+/********** HEADING SIZE **********/
+$h-sizes: (
+    h1: var(--h1),
+    h2: var(--h2),
+    h3: var(--h3),
+    h4: var(--h4),
+    h5: var(--h5),
+);
