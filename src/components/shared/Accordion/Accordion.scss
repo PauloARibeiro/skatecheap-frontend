@@ -1,0 +1,37 @@
+@import '../../../scss/utils';
+@import '../../../scss/mixins';
+
+.accordion {
+    $self: &;
+
+    &--false {
+        #{$self}__content {
+            max-height: 0;
+        }
+    }
+
+    &--true {
+        #{$self}__content {
+            max-height: 600px;
+        }
+    }
+
+    &__header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // padding-bottom: var(--space-s);
+        // padding-top: var(--space-s);
+        cursor: pointer;
+
+        @extend .f-s-m;
+        @extend .f-w-700;
+    }
+
+    &__content {
+        overflow: hidden;
+
+        @include animate;
+    }
+}

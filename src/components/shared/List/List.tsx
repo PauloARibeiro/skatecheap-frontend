@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { ListContext } from './List.context'
 import { List as IList } from './List.types'
 
-export const List: React.ComponentType<IList> = ({ children, classes }) => {
+export const List: React.FC<IList> = ({ children, classes }) => {
     const [selected, setSelected] = useState(null)
 
     return (

@@ -5,7 +5,7 @@ import { CheckboxProps, defaultProps } from './Checkbox.types'
 
 import './Checkbox.scss'
 
-export const Checkbox: React.FC<CheckboxProps> = (props) => {
+const Checkbox: React.FC<CheckboxProps> = (props) => {
     const { checked, value, onChange, label, name, disabled, classes } = props
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -32,3 +32,5 @@ export const Checkbox: React.FC<CheckboxProps> = (props) => {
 }
 
 Checkbox.defaultProps = defaultProps
+
+export default Checkbox

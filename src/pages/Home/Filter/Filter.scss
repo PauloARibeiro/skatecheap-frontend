@@ -1,0 +1,58 @@
+@import '../../../scss/utils';
+
+.filters-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.3);
+
+    @extend .font-base;
+}
+
+.filters {
+    background: var(--c-white);
+    width: 30%;
+    height: 100%;
+    margin-left: auto;
+    padding: var(--space-m) var(--space-xxl) var(--space-xxl) var(--space-xxl);
+
+    &__header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: var(--space-m);
+
+        &__txt {
+            @extend .f-w-700;
+            @extend .f-s-l;
+        }
+
+        &__close {
+            cursor: pointer;
+        }
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+
+        &--title {
+            margin-bottom: var(--space-s);
+            cursor: pointer;
+
+            @extend .f-s-m;
+            @extend .f-w-700;
+        }
+
+        &__items {
+            &--item {
+                display: block;
+                margin-bottom: var(--space-xs);
+            }
+        }
+    }
+}

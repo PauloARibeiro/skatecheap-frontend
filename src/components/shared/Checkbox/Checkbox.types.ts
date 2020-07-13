@@ -17,12 +17,12 @@ export interface CheckboxProps {
     /** @default  */
     classes?: string
 
-    onChange: (checked: boolean) => void
+    onChange: Function
 }
 
 export const defaultProps: CheckboxProps = {
     checked: false,
     value: '',
     disabled: false,
-    onChange: (state = false) => state,
+    onChange: (state: boolean) => state,
 }

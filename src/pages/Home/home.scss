@@ -1,14 +1,5 @@
 @import '../../scss/index.scss';
 
-// THIS WORKS
-@media (max-width: calc(calc(((76.9230769231) / 100) * var(--sh)) * 1)) {
-    // THIS DOES NOT WORK
-    // @media (max-width: calc(500px - calc(100px - 50))) {
-    .card-container {
-        background: red;
-    }
-}
-
 .card-container {
     display: grid;
     grid-gap: var(--space-m);
@@ -17,13 +8,31 @@
 }
 
 .card {
+    position: relative;
     width: 100%;
+    height: 100%;
+    border: 1px solid var(--c-grayscale-300);
     // max-width: 25rem;
     // padding: var(--space-m);
     text-align: center;
     @extend .pointer-base;
     @extend .font-base;
     @extend .f-s-m;
+
+    @include fade;
+
+    &:hover {
+        border-color: var(--c-black);
+    }
+
+    &__discount {
+        position: absolute;
+        right: -0.1rem;
+        top: 1rem;
+        width: 25%;
+        background: var(--c-brand);
+        color: var(--c-white);
+    }
 
     &__img {
         width: 100%;
@@ -43,8 +52,28 @@
         }
 
         &__price {
+            position: relative;
             margin-top: var(--space-xs);
+            display: flex;
+            justify-content: center;
+            align-self: center;
+
             @extend .f-w-700;
+
+            &--original {
+                margin-top: auto;
+                margin-bottom: auto;
+                margin: auto 1rem auto 0;
+            }
+
+            &.discount {
+                .card-info__price--original {
+                    text-decoration: line-through;
+                    color: var(--c-grayscale-400);
+
+                    @extend .f-s-s;
+                }
+            }
         }
 
         &__seller {
