@@ -32,7 +32,7 @@ const Filter: React.FC = (props) => {
                 <div className="filters__header">
                     <span className="filters__header__txt">Filters</span>
                     <div className="filters__header__close">
-                        <IconChevron color={COLORS.CTA} hoverColor={COLORS.WHITE} />
+                        <IconChevron color={COLORS.BLACK} hoverColor={COLORS.CTA} />
                     </div>
                 </div>
                 <div className="filters__section">
